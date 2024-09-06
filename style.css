@@ -1,0 +1,63 @@
+body{
+    background-image: url(res/aesthetic_deer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    width: 40%;
+    margin: 7% auto;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    right: -25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.523);
+    max-height: 70%;
+    max-width: 70%;
+    backdrop-filter: blur(10px);
+}
+
+.navbarmain{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.523);
+    max-height: 10%;
+    height: 1%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+
+}
+
+
+.navbarul{
+    display: flex;
+    justify-content: center;
+    margin-right: 4%;
+}
+
+.navbarul li{
+    list-style: none;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.navbarul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
