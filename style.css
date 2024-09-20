@@ -1,0 +1,338 @@
+
+/* MainBody */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #03122f;
+    font-family: "EB Garamond", serif;
+}
+
+/* ########################
+   ########################
+        Main Container
+   ########################
+   ######################## */
+.hold{
+    width: 100vw;
+    overflow: auto;
+}
+
+
+
+/* ########################
+   ########################
+        Home Section
+   ########################
+   ######################## */
+
+.main{
+    background-image: url(res/aesthetic_deer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 52rem;
+    margin: 0;
+    overflow: auto;
+    padding: 10px;
+}
+
+
+/* ########################
+   ########################
+        Navigation
+   ########################
+   ######################## */
+
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+   
+}
+
+.blur{
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    border: solid #e73a65 2px;
+}
+
+.navleft{
+    width: 15rem;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.navleft h1{
+    display: contents;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #e54b72;
+    }
+    
+.navleft h1 span{
+    color: #e73a65;
+}
+
+.navright{
+    width: 35rem;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    right: 7%;
+    z-index: 100;
+}
+
+.navright a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+
+.nav-link {
+    text-transform: uppercase;  
+    color: #e54b72;
+    margin-bottom: 5px;
+    position: relative;
+    opacity: 0.75;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #e54b72;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 0px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 90%;
+  }
+
+/* ########################
+   ########################
+        Hero Section
+   ########################
+   ######################## */
+
+.code{
+    display: flex;
+    margin: 2px;
+    
+}
+
+.code span{
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nospace{
+    margin-right: 0px !important;
+}
+
+.gap{
+    margin-left: 100px;
+}
+
+.pink{
+    color: #e73a65;
+}
+
+.gray{
+    color: #a6a6a6;
+}
+
+.yellow{
+    color: #fcd34d;
+}
+
+.orange{
+    color: #e45c30;
+}
+
+.herosec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-top: 6rem;
+}
+
+.pic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 100%;
+    
+}
+
+.pic {
+    background: linear-gradient(197deg, #e73a65, #03122f);
+    background-size: 400% 400%;
+
+    -webkit-animation: MovingGradiant 10s ease infinite;
+    -moz-animation: MovingGradiant 10s ease infinite;
+    animation: MovingGradiant 10s ease infinite;
+}
+
+
+
+@-webkit-keyframes MovingGradiant {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-moz-keyframes MovingGradiant {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@keyframes MovingGradiant {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+
+.fgimg{
+    position: relative;
+    border-radius: 100%;
+    height: 32.1rem;
+    object-fit: cover;
+    
+}
+
+.detail{
+    width: 56rem;
+    height: 25rem;
+    padding: 15px;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.detail p span{
+    color: #e73a65;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+
+.name{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* ########################
+   ########################
+        About Section
+   ########################
+   ######################## */
+
+.about{
+    margin-top: 0px;
+    padding: 5rem;
+}
+
+.abthead{
+    color: #e5e5e5;
+    padding: 10px;
+    
+}
+
+.abthead h1{
+    text-align: center;
+    color: #e73a65;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0;
+}
+
+
+.aboutdesc{
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    height: 30rem;
+    width: 80rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #e5e5e5;
+}
+
+.pera{
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    height: 30rem;
+    width: 80rem;
+    text-align: center;
+}
+
+blockquote{
+    border: none;
+    margin-bottom:-30px;
+    position: relative; 
+    margin: 0 auto; 
+    padding-left: 0.4em; 
+}
+
+blockquote .pera:before {
+    content: "\201C";
+    font-weight: bold;
+    font-size:100px;
+    color:#e73a65;
+    position: absolute; 
+    top: -0.0em;
+    left: -0.0em; 
+    font-family: 'Georgia';
+}
+
+
+blockquote .pera:after {
+    content: "\201D";
+    font-weight: bold;
+    font-size:100px;
+    color:#e73a65;
+    position: absolute; 
+    bottom: -0.08em;
+    right: 2rem; 
+    font-family: 'Georgia'; 
+}
