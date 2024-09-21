@@ -235,7 +235,7 @@ body{
 
 .detail{
     width: 56rem;
-    height: 25rem;
+    height: 27rem;
     padding: 15px;
     color: white;
     font-size: 1.7rem;
@@ -332,3 +332,23 @@ body{
     padding: 0;
     grid-column: span 2;
 }
+
+
+
+/* ########################
+   ########################
+        Skills Section
+   ########################
+   ######################## */
+
+  
+.logo-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
