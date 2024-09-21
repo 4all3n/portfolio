@@ -5,6 +5,27 @@ body{
     padding: 0;
     background-color: #03122f;
     font-family: "EB Garamond", serif;
+    overflow-x: hidden;
+}
+
+
+.cantainer{
+    margin-top: 10px;
+    padding: 5rem;
+}
+
+.head{
+    margin: 0;
+    padding: 10px;
+    
+}
+.head h1{
+    text-align: center;
+    color: #e73a65;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
 }
 
 /* ########################
@@ -13,10 +34,9 @@ body{
    ########################
    ######################## */
 .hold{
-    width: 100vw;
-    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
 }
-
 
 
 /* ########################
@@ -30,12 +50,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 52rem;
     margin: 0;
     overflow: auto;
     padding: 10px;
 }
+
 
 
 /* ########################
@@ -66,16 +87,14 @@ body{
     z-index: 100;
 }
 
-.navleft h1{
+.navleft a{
     display: contents;
+    text-decoration: none;
+    font-weight: 900;
     font-size: 2.5rem;
     text-align: center;
-    color: #e54b72;
+    color: #e54b72;;
     }
-    
-.navleft h1 span{
-    color: #e73a65;
-}
 
 .navright{
     width: 35rem;
@@ -132,6 +151,8 @@ body{
         Hero Section
    ########################
    ######################## */
+
+
 
 .code{
     display: flex;
@@ -193,26 +214,11 @@ body{
 }
 
 .pic {
-    background: linear-gradient(197deg, #e73a65, #03122f);
-    background-size: 400% 400%;
-
-    -webkit-animation: MovingGradiant 10s ease infinite;
-    -moz-animation: MovingGradiant 10s ease infinite;
-    animation: MovingGradiant 10s ease infinite;
+    background: linear-gradient(197deg, #c73358, #03122f);
+    background-size: 200% 200%;
+    animation: MovingGradiant 7s ease infinite;
 }
 
-
-
-@-webkit-keyframes MovingGradiant {
-    0%{background-position:2% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:2% 0%}
-}
-@-moz-keyframes MovingGradiant {
-    0%{background-position:2% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:2% 0%}
-}
 @keyframes MovingGradiant {
     0%{background-position:2% 0%}
     50%{background-position:99% 100%}
@@ -254,85 +260,75 @@ body{
    ########################
    ######################## */
 
-.about{
-    margin-top: 0px;
-    padding: 5rem;
-}
 
-.abthead{
-    color: #e5e5e5;
+
+
+
+.details{
+    display: flex;
+    justify-content: start;
+    gap: 7rem;
+    align-items: center;
+    margin-top: 130px;
+    color: white;
+    font-size: 1.5rem;
     padding: 10px;
-    
 }
 
-.abthead h1{
-    text-align: center;
-    color: #e73a65;
-    font-size: 3rem;
-    font-weight: 900;
+.details .img{
+    width: 32rem;
+    height: 32rem;
+    object-fit: cover;
     margin: 0;
     padding: 0;
 }
 
-.details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0px;
+.info{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 32rem;
+    height: 32rem;
+}
+
+
+.topinfo{
+    width: 29rem;
+    height: 14rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.topinfo img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-top: 7px;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.topinfo .name{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #e73a65;
+    text-align: center;
+    margin: 0;
     padding: 0;
 }
 
-
-.aboutdesc{
-    align-items: center;
-    margin: 10px;
-    margin-top: 20px;
-    padding: 30px;
-    height: 30rem;
-    width: 80rem;
-    font-size: 1.5rem;
-    text-align: center;
+.topinfo .exp{
+    font-size: 1.4rem;
     font-weight: 500;
-    color: #e5e5e5;
-}
-
-.pera{
-    align-items: center;
-    margin: 10px;
-    margin-top: 20px;
-    padding: 30px;
-    height: 30rem;
-    width: 80rem;
+    color: #ffffff;
     text-align: center;
+    margin: 9px;
+    padding: 0;
 }
 
-blockquote{
-    border: none;
-    margin-bottom:-30px;
-    position: relative; 
-    margin: 0 auto; 
-    padding-left: 0.4em; 
-}
-
-blockquote .pera:before {
-    content: "\201C";
-    font-weight: bold;
-    font-size:100px;
-    color:#e73a65;
-    position: absolute; 
-    top: -0.0em;
-    left: -0.0em; 
-    font-family: 'Georgia';
-}
-
-
-blockquote .pera:after {
-    content: "\201D";
-    font-weight: bold;
-    font-size:100px;
-    color:#e73a65;
-    position: absolute; 
-    bottom: -0.08em;
-    right: 2rem; 
-    font-family: 'Georgia'; 
+.desc {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    grid-column: span 2;
 }
