@@ -239,6 +239,7 @@ body{
     padding: 15px;
     color: white;
     font-size: 1.7rem;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .detail p span{
@@ -341,14 +342,185 @@ body{
    ########################
    ######################## */
 
-  
-.logo-holder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 130px;
-    color: white;
-    font-size: 1.5rem;
+
+   .skill-hold{
+       display: flex;
+       justify-content: space-around;
+       margin-top: 150px;
+   }
+
+   .skills{
+       width: 47rem;
+       height: 25rem;
+       color: whitesmoke;
+       text-align: center;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(3, 1fr);
+   }
+
+   .skills h1{
+       font-size: 2.5rem;
+       font-weight: 700;
+       margin-top: 5px;
+       margin-bottom: -10px;
+       padding: 0;
+       grid-column: span 3;
+   }
+
+   .skill{
+       display: flex;
+       width: 10rem;
+       align-items: center;
+       justify-content: space-around;
+       gap: 0.5rem;
+       margin-left: 10px;
+       padding: 10px;
+   }
+
+   .simg{
+       height: 2rem;
+      
+   }
+
+   .skill div{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 10px;
+   }
+
+   .skill div h3{
+       font-size: 1.5rem;
+       font-weight: 900;
+       margin: 0;
+   }
+
+   .skill div p{
+       font-size: 1.2rem;
+       font-weight: 500;
+       margin: 0;
+   }
+
+   .col{
+       grid-column: span 3;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: auto;
+       margin-left: -50px;
+   }
+
+
+   /* ########################
+   ########################
+        Projects Section
+   ########################
+   ######################## */
+
+   .project-hold{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 100px;
+       gap: 5rem;
+       color: whitesmoke;
+   }
+
+
+   .project{
+       width: 24rem;
+       height: 35rem;
+       border-radius: 1rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       padding: 10px;
+
+   }
+
+   .project img{
+       width: 22rem;
+       height: 25rem;
+       object-fit: cover;
+       border-radius: 1rem;
+   }
+
+
+    button {
+           border: #e73a65 2px solid;
+           color: white;
+           background-color: transparent;
+           cursor: pointer;
+           margin: 4px;
+           width: 8rem;
+           height: 3rem;
+           padding: 10px;
+           border-radius: 25px;
+           font-weight: 900;
+           font-size: 1.2rem;
+           transition: box-shadow 0.3s ease-in-out;
+       }
+       
+    .glow:hover {
+           box-shadow: 0 0 20px #e73a65;
+       }
+
+    
+
+.contact-hold{
+    color: whitesmoke;
+    text-align: center;
+    
+}       
+    
+.contact{
+    color: whitesmoke;
+    text-align: center;
+    width: 50%;
+    height: 4.7rem;
     padding: 10px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
+.contact-hold h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contact-hold p{
+    margin: 10;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact img{
+    height: 4rem;
+    width: 4rem;
+    margin-top: 10px;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0 20px;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+
+
+a{
+    text-decoration: none;
+}
